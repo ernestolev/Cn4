@@ -138,7 +138,7 @@ class Conecta4App(tk.Tk):
         self.dibujar_fichas()
 
     def jugada_ia(self):
-        """Realiza la jugada de la IA."""
+        """Realiza la jugada de la IA con un retraso."""
         if self.ia_python:
             columna = self.ia.obtener_jugada(self.tablero)
         else:
@@ -146,13 +146,16 @@ class Conecta4App(tk.Tk):
             columna = resultado[0] if resultado else None
 
         if columna is not None:
-            for fila in range(5, -1, -1):
-                if self.tablero[fila][columna] == " ":
-                    self.tablero[fila][columna] = "amarillo"
-                    self.dibujar_fichas()
-                    if self.verificar_ganador(fila, columna):
-                        return
-                    self.turno = "rojo"
-                    break
-        else:
-            messagebox.showerror("Error de IA", "La IA no pudo realizar una jugada.")
+            def realizar_jugada():
+                for fila in range(5, -1, -1):
+                    if self.tablero[fila][columna] == " ":
+                        self.tablero[fila][columna] = "amarillo"
+                        self.dibujar_fichas()
+                        if self.verificar_ganador(fila, columna):
+                            return
+                        self.turno = "rojo"
+                        break
+                else:
+                    messagebox.showerror("Error de IA", "La IA no pudo realizar una jugada.")
+
+            self.after(500, realizar_jugada)        
