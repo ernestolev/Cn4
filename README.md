@@ -29,6 +29,7 @@ La IA analiza el tablero actual y determina la jugada óptima utilizando reglas 
 Si no tienes las dependencias instaladas, ejecútalas en tu terminal:
 ```bash
 pip install pyswip
+```
 
 ## **Estructura**
 
@@ -49,14 +50,17 @@ Si estás trabajando localmente, asegúrate de que el proyecto esté en tu máqu
 ```bash
 git clone https://github.com/tu-repositorio/cn4.git
 cd cn4
+```
 ### **2. Clonar Repo**
 Si no has instalado las dependencias necesarias, ejecuta:
 ```bash 
 pip install -r requirements.txt
+```
 ### **3. Ejecutar juego**
 En la carpeta principal del proyecto (Cn4), ejecuta:
 ```bash 
 python main.py
+```
 
 ## **Uso del juego**
 
