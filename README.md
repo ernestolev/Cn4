@@ -32,7 +32,7 @@ pip install pyswip
 ```
 
 ## **Estructura**
-
+```bash
 Cn4/
 ├── main.py                # Archivo principal para ejecutar el juego
 ├── interface.py           # Interfaz gráfica con tkinter
@@ -42,6 +42,7 @@ Cn4/
 │   ├── conecta4.pl        # Lógica del juego en Prolog
 ├── requirements.txt       # Lista de dependencias (pyswip)
 └── README.md        
+```
 
 ## **Como ejeutar?**
 
