@@ -1,7 +1,7 @@
 # Cn4 - Conecta 4
 
 Este proyecto es un juego de **Conecta 4** desarrollado como **Trabajo de Investigación 3** para el curso de **Programación Lógica y Funcional** en la **Universidad Tecnológica del Perú (UTP)**.  
-Autor: **Ernesto Levaño**  
+Autor: **Ernesto Levano U21202486**  
 
 ---
 
