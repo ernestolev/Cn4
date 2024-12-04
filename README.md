@@ -9,7 +9,7 @@ Autor: **Ernesto Levano U21202486**
 
 El proyecto combina **Python** y **Prolog** para implementar un juego de Conecta 4 interactivo.  
 - **Python**: Se utiliza para la interfaz gráfica y la interacción con el usuario.
-- **Prolog**: Gestiona la lógica de la inteligencia artificial (IA) que juega contra el usuario.
+- **Prolog**: Gestiona la lógica de la computadora que juega contra el usuario.
 
 La IA analiza el tablero actual y determina la jugada óptima utilizando reglas lógicas escritas en Prolog.
 
@@ -34,17 +34,13 @@ pip install pyswip
 ## **Estructura**
 ```bash
 Cn4/
-├── main.py                # Archivo principal para ejecutar el juego
-├── interface.py           # Interfaz gráfica con tkinter
-├── prolog_bridge.py       # Comunicación entre Python y Prolog
-├── logic/
-│   ├── ai_logic.py        # (Opcional) Implementación de IA en Python
-│   ├── conecta4.pl        # Lógica del juego en Prolog
-├── requirements.txt       # Lista de dependencias (pyswip)
+├── conecta4.pl     
+├── conecta4.py        
+├── requirements.txt  
 └── README.md        
 ```
 
-## **Como ejeutar?**
+## **Como ejecutar?**
 
 ### **1. Clonar Repo**
 Si estás trabajando localmente, asegúrate de que el proyecto esté en tu máquina. Por ejemplo:
@@ -60,7 +56,7 @@ pip install -r requirements.txt
 ### **3. Ejecutar juego**
 En la carpeta principal del proyecto (Cn4), ejecuta:
 ```bash 
-python main.py
+python conecta4.py
 ```
 
 ## **Uso del juego**
@@ -76,8 +72,6 @@ El turno alterna entre el jugador humano y la IA.
 Condición de victoria:
 
 4. El primer jugador en conectar 4 fichas consecutivas (horizontal, vertical o diagonal) gana.
-Las fichas ganadoras se resaltarán en azul.
-Reiniciar el juego:
 
 Haz clic en el botón "🔄 Reiniciar Juego" para empezar una nueva partida.
 
@@ -85,8 +79,8 @@ Haz clic en el botón "🔄 Reiniciar Juego" para empezar una nueva partida.
 
 ### ***Uso de prolog***
 
-- Archivo: logic/conecta4.pl.
-- Prolog maneja la lógica de la IA, como:
+- Archivo: conecta4.pl.
+- Prolog maneja la lógica de la PC, como:
 - Determinar jugadas válidas.
  - Bloquear al jugador humano si está a punto de ganar.
  - Buscar la mejor jugada para ganar.
@@ -94,7 +88,6 @@ Haz clic en el botón "🔄 Reiniciar Juego" para empezar una nueva partida.
  ### ***Conexion a Py***
 
 - Utilizamos la biblioteca pyswip para conectar Python con Prolog.
-- La clase PrologBridge en prolog_bridge.py realiza las consultas necesarias a Prolog.
 
  ### ***Interfaz grafica***
 - Desarrollada con tkinter.
