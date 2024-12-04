@@ -1,8 +1,14 @@
 import tkinter as tk
 from tkinter import messagebox
+import os
+
+
 
 # Lógica Prolog importada
 from pyswip import Prolog
+
+ruta_prolog = os.path.join(os.path.dirname(__file__), "conecta4.pl")
+
 
 class Conecta4:
     def __init__(self, root):
